@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_progress_icon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true"
+        android:background="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_progress_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_progress_icon"
+        android:text="应用名称"
+        android:textColor="#807e7e"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_progress_memory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_progress_name"
+        android:layout_toRightOf="@+id/iv_progress_icon"
+        android:text="路径"
+        android:textColor="#807e7e"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/cb_progress_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+</RelativeLayout>

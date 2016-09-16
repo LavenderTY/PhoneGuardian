@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ty.phoneguardian.Activity.SetOverActivity">
+
+    <TextView
+        style="@style/TitleStyle"
+        android:text="@string/phone_bak" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/safety_number"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/tv_phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="1234"
+            android:textSize="23sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4px"
+        android:background="@drawable/bg_dash_line"
+        android:layerType="software" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/protect_yes_no"
+            android:textSize="23sp" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4px"
+        android:background="@drawable/bg_dash_line"
+        android:layerType="software" />
+
+    <TextView
+        android:id="@+id/tv_setting_again"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_again"
+        android:text="@string/into_setting_again"
+        android:textSize="23sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#688ce7"
+        android:padding="10dp"
+        android:text="@string/function_intro"
+        android:textSize="24dp" />
+
+    <TextView
+        style="@style/listStart"
+        android:text="@string/gps_location" />
+
+    <TextView
+        style="@style/listStart"
+        android:text="@string/alarm" />
+
+    <TextView
+        style="@style/listStart"
+        android:text="@string/wipe_data" />
+
+    <TextView
+        style="@style/listStart"
+        android:text="@string/long_lock_screen" />
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <!--将这个布局封装到一个xml中，以后就可以重用了-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/tv_title_click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tv_color_click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title_click"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:id="@+id/iv_arrows_click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@mipmap/jiantou1_pressed" />
+
+        <View
+            android:id="@+id/view_line_click"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_below="@id/tv_color_click"
+            android:background="#000" />
+    </RelativeLayout>
+</LinearLayout>

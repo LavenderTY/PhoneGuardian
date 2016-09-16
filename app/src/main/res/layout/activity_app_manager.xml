@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ty.phoneguardian.Activity.AppManagerActivity">
+
+    <TextView
+        style="@style/TitleStyle"
+        android:text="@string/app_manage" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_memory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tv_sd_memory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="23sp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:id="@+id/lv_show_app"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+
+        <TextView
+            android:id="@+id/tv_show_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#aba3a3"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:textSize="24sp" />
+    </FrameLayout>
+</LinearLayout>

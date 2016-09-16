@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/TitleStyle"
+        android:text="@string/function_list" />
+    <!--android:ellipsize="marquee" 设置为跑马灯-->
+    <!-- android:ellipsize="end"  设置省略点所在的位置-->
+    <com.ty.phoneguardian.ui.FocusTextView
+        android:id="@+id/tv_roll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginBottom="10dp"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text="走过路过不要错过，快来看看，有新版本啦，不看会后悔的哦，千万不要做让自己后悔的事情，来来来来...啦啦啦啦啦啦啦"
+        android:textSize="18sp"></com.ty.phoneguardian.ui.FocusTextView>
+
+    <LinearLayout
+        android:id="@+id/adLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"></LinearLayout>
+    <!--android:numColumns 指定列数-->
+    <GridView
+        android:id="@+id/gv_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_roll"
+        android:numColumns="3"
+        android:verticalSpacing="15dp"></GridView>
+</RelativeLayout>

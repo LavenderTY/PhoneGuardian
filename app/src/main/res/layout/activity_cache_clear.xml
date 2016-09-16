@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ty.phoneguardian.Activity.CacheClearActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/TitleStyle"
+            android:gravity="left"
+            android:text="@string/cache_clear" />
+
+        <Button
+            android:id="@+id/cache_clear_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#738ae4"
+            android:text="@string/cache_clear_now"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/pb_cache_bar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progressDrawable="@drawable/progress_bar_bg" />
+
+    <TextView
+        android:id="@+id/tv_cache_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp" />
+    <!--ScrollView只能有一个直接子节点-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--将所有的TextView包裹在内部（将TextView从头部做插入）-->
+        <LinearLayout
+            android:id="@+id/ll_add_cache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"></LinearLayout>
+    </ScrollView>
+</LinearLayout>

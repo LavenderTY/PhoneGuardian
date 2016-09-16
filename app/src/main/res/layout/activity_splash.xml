@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel_splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/launcher_bg"
+    tools:context="com.ty.phoneguardian.SplashActivity">
+
+    <TextView
+        android:id="@+id/tv_version_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:shadowColor="#ea1e1a"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:text="@string/versions_name"
+        android:textSize="22sp" />
+    <!--android:shadowDx="1"
+        android:shadowDy="1"  设置阴影的X与Y轴
+        android:shadowColor="#ea1e1a"  设置阴影的颜色
+        android:shadowRadius="1"  阴影的半径-->
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_version_name"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

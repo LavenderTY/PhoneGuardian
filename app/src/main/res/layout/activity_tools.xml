@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ty.phoneguardian.Activity.ToolsActivity">
+
+    <TextView
+        style="@style/TitleStyle"
+        android:text="@string/supper_tool" />
+
+    <TextView
+        android:id="@+id/address_query"
+        style="@style/TextTool"
+        android:text="@string/address_query" />
+
+    <TextView
+        android:id="@+id/copy_message"
+        style="@style/TextTool"
+        android:text="@string/copy_message" />
+
+    <TextView
+        android:id="@+id/query_often_use_number"
+        style="@style/TextTool"
+        android:text="@string/query_often_use_number" />
+
+    <TextView
+        android:id="@+id/program_lock"
+        style="@style/TextTool"
+        android:text="@string/program_lock" />
+</LinearLayout>

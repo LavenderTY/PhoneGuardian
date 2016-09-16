@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ty.phoneguardian.Activity.SettingActivity">
+
+    <TextView
+        style="@style/TitleStyle"
+        android:text="@string/setting_center" />
+
+    <com.ty.phoneguardian.ui.SettingItemView xmlns:mobilesafe="http://schemas.android.com/apk/res/com.ty.phoneguardian"
+        android:id="@+id/siv_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        mobilesafe:desoff="自动更新已关闭"
+        mobilesafe:deson="自动更新已开启"
+        mobilesafe:destitle="自动更新设置" />
+
+    <com.ty.phoneguardian.ui.SettingItemView xmlns:mobilesafe="http://schemas.android.com/apk/res/com.ty.phoneguardian"
+        android:id="@+id/siv_phone_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        mobilesafe:desoff="归属地显示已关闭"
+        mobilesafe:deson="归属地显示已开启"
+        mobilesafe:destitle="电话归属地显示设置" />
+
+    <com.ty.phoneguardian.ui.SettingClickView xmlns:mobilesafe="http://schemas.android.com/apk/res/com.ty.phoneguardian"
+        android:id="@+id/scv_toast_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.ty.phoneguardian.ui.SettingClickView xmlns:mobilesafe="http://schemas.android.com/apk/res/com.ty.phoneguardian"
+        android:id="@+id/scv_toast_position"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.ty.phoneguardian.ui.SettingItemView xmlns:mobilesafe="http://schemas.android.com/apk/res/com.ty.phoneguardian"
+        android:id="@+id/siv_blacklist_intercept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        mobilesafe:desoff="黑名单拦截已关闭"
+        mobilesafe:deson="黑名单拦截已开启"
+        mobilesafe:destitle="黑名单拦截设置" />
+
+    <com.ty.phoneguardian.ui.SettingItemView xmlns:mobilesafe="http://schemas.android.com/apk/res/com.ty.phoneguardian"
+        android:id="@+id/siv_app_lock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        mobilesafe:desoff="程序锁已关闭"
+        mobilesafe:deson="程序锁已开启"
+        mobilesafe:destitle="程序锁设置" />
+
+    <com.ty.phoneguardian.ui.SettingItemView xmlns:mobilesafe="http://schemas.android.com/apk/res/com.ty.phoneguardian"
+        android:id="@+id/siv_app_rock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        mobilesafe:desoff="小火箭已关闭"
+        mobilesafe:deson="小火箭已开启"
+        mobilesafe:destitle="小火箭设置" />
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SetNavigation.NavigationFirstActivity">
+
+    <TextView
+        style="@style/TitleStyle"
+        android:text="@string/navigation_first" />
+
+    <TextView
+        style="@style/listStart"
+        android:text="@string/phone_guard" />
+
+    <TextView
+        style="@style/listStart"
+        android:text="@string/sim_change" />
+
+    <TextView
+        style="@style/listStart"
+        android:text="@string/gps_go" />
+
+    <TextView
+        style="@style/listStart"
+        android:text="@string/long_change" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:drawableLeft="@android:drawable/star_big_on"
+        android:text="@string/destory_data"
+        android:textColor="#000"
+        android:textSize="23sp" />
+    <!--内部的点水平居中-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/enable_point" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/disable_point" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/disable_point" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/disable_point" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/setup1" />
+
+        <Button
+            style="@style/nextBut"
+            android:onClick="nextPage" />
+    </RelativeLayout>
+</LinearLayout>
